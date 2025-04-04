@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Machine Learning Demo - Aaron Graham</title>
+  <style>
+    /* Basic style copied from Aaron-Skills. Keep color scheme, layout, etc. */
+    body {
+      margin: 0; padding: 0;
+      font-family: sans-serif;
+      background: #f2f2f2;
+    }
+    header {
+      background-color: #1aa3a3;
+      padding: 1rem; text-align: center; color: #fff;
+    }
+    main {
+      max-width: 800px; margin: 2rem auto; padding: 0 1rem; background: #fff;
+    }
+    h1, h2 {
+      color: #1aa3a3;
+    }
+    /* ... replicate the rest of the Aaron-Skills style ... */
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Machine Learning Demo</h1>
+  </header>
+
+  <main>
+    <h2>About This Skill</h2>
+    <p>This page demonstrates machine learning expertise with a simple code example...</p>
+    
+    <h2>Sample Code</h2>
+    <pre><code>
+from sklearn.linear_model import LinearRegression
+import numpy as np
+
+# Sample data
+X = np.array([[1], [2], [3], [4], [5]])
+y = np.array([2, 3, 5, 7, 11])
+
+# Create a linear regression model
+model = LinearRegression()
+model.fit(X, y)
+
+# Predict
+print(model.predict([[6]]))
+    </code></pre>
+
+    <p>Explanation: This snippet demonstrates a simple linear regression model using scikit-learn.</p>
+  </main>
+</body>
+</html>
